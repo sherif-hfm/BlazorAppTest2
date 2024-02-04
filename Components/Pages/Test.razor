@@ -1,4 +1,4 @@
-﻿@page "/counter"
+﻿@page "/test"
 @rendermode @(new InteractiveServerRenderMode(prerender: true))
 
 <PageTitle>Counter</PageTitle>
@@ -20,7 +20,6 @@
 
     protected override void OnInitialized()
     {
-
         // #53462 OnInitialized is executed one time not twice even I set prerender to true
         persistingSubscription = ApplicationState.RegisterOnPersisting(PersistData);
 
